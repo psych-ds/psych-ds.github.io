@@ -11,7 +11,11 @@ body {
 }
 
 .text-muted {
-    color: #777;
+    color: #bbb;
+}
+
+.text-muted-dark {
+    color: #bfbfbf;
 }
 
 .text-primary {
@@ -43,6 +47,25 @@ a:hover,
 a:focus,
 a:active,
 a.active {
+    color: #{{ site.color.secondary }};
+}
+
+a-dark,
+a-dark:hover,
+a-dark:focus,
+a-dark:active,
+a-dark.active {
+    outline: 0;
+}
+
+a-dark {
+    color: #{{ site.color.secondary-light }};
+}
+
+a-dark:hover,
+a-dark:focus,
+a-dark:active,
+a-dark.active {
     color: #{{ site.color.secondary }};
 }
 
@@ -350,7 +373,7 @@ section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
+    font-size: 24px;
     font-style: italic;
     font-weight: 400;
 }

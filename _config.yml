@@ -3,8 +3,9 @@
 
 #Step 1: give your study group a name and a short description,
 #and choose a language from the options in the _data directory:
-title: Our Study Group
-description: "A study group."
+title: Psych-DS
+description: "A specification for psychological datasets.
+JSON metadata, predictable directory structure, and machine-readable specifications for tabular datasets."
 language: en
 
 #Step 2: press the green 'Commit Changes' button at the bottom of this page.
@@ -19,8 +20,8 @@ language: en
 # None of these things need to be changed - but feel free!
 
 titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
-headlineSmall: "Welcome To Our Study Group!"
-headlineMain: "Let's Work Together"
+headlineSmall: "A specification for psychological datasets"
+headlineMain: "Psych-DS"
 
 # Setup Google Calendar
 # Usage:
@@ -41,6 +42,7 @@ color:
   primary: fed136
   secondary: fec503
   secondary-dark: 333
+  secondary-light: 00ff38
 
 # Build settings
 markdown: kramdown
