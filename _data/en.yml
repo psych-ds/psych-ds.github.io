@@ -1,6 +1,5 @@
 ---
 whatWeDo: About
-events: Events
 contact: Contact
 tellMeMore: Tell Me More
 
@@ -16,21 +15,6 @@ activities:
     description: "Building consensus for how we structure/document our data so we can find and extend each others' work."
     icon: fa-group
 
-events: Events
-eventsSubheading: Our upcoming and recent events
-eventPlaceholder: Nothing yet! Propose an event here.
-suggestEvent: Suggest an Event
-leadership: How to lead a Study Group session
-pastEvents: See Our Past Events
-
-notification: Want to be notified of our upcoming events?
-watching: 'Head over to <a href="https://github.com/mozillascience/studyGroup">GitHub</a> and watch our repository, like this:'
-watchingCaption: 'Look in the top right-hand corner of <a href="%GITHUB_REPO_URL%">our repo</a>, and click "Watching." <br>You can undo this at any time in the same place.'
-
-calendar: Subscribe to our events calendar!
-calendarSubheading: 'We also invite you to follow <a href="%CALENDAR_EMBED_URL%" target="_blank">our calendar</a>, where events will be posted.'
-googleCalendar: 'If you use Google calendar, you can add our calendar by pressing the "Google Calendar" button at the bottom-right of <a href="%CALENDAR_EMBED_URL%" target="_blank">this page</a>.'
-iCal: 'If you use another calendar app, you can copy and paste <a href="%CALENDAR_ICAL_URL%">this address</a> into any calendar product that supports the iCal format.'
 
 sayHi: You can help
 contactSubheading: "Right now, discussions about this project take place via comments and edits to the <a href='https://docs.google.com/document/d/1u8o5jnWk0Iqp_J06PTu5NjBfVsdoPbBhstht6W0fFp0/edit?usp=sharing' style='color:white'>technical specification draft</a>, on the <a href='https://groups.google.com/forum/#!forum/psych-data-standards' style='color:white'>mailing list</a>, and in issues in our <a href='https://github.com/psych-DS/psych-DS' style='color:white'>GitHub repository</a>.<br><br>
