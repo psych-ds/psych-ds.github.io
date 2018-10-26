@@ -7,13 +7,13 @@ tellMeMore: Tell Me More
 activitiesSubheading: ''
 activities:
   - title: FAIR project organisation
-    description: 'Share your favorite coding skills and tools with your friends and colleagues in friendly, no-pressure work-alongs.</p>'
+    description: 'Work with your data in formats that make your life easy and help you document and share with others.</p>'
     icon: fa-cogs
   - title: Human friendly, machine readable
-    description: 'Get together to work on your coding projects, help each other out and share your work.'
+    description: 'Designed for individual scientists to generate machine-readable datasets and metadata.'
     icon: fa-laptop
   - title: Community driven
-    description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
+    description: "Building consensus for how we structure/document our data so we can find and extend each others' work."
     icon: fa-group
 
 events: Events
