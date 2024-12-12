@@ -1,0 +1,30 @@
+<!-- _includes/acknowledgements.html -->
+<section id="acknowledgements">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{{site.data.en.acknowledgementsHeading}}</h2>
+                <p class="lead">{{site.data.en.acknowledgementsIntro}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="funders-grid">
+                    {% for funder in site.data.en.acknowledgementsItems %}
+                    <a href="{{ funder.link }}" class="funder-card" target="_blank">
+                        <div class="funder-image">
+                            <img src="{{ funder.image }}" alt="{{ funder.name }}">
+                        </div>
+                        <div class="funder-info">
+                            <h4>{{ funder.name }}</h4>
+                            {% if funder.grantNumber %}
+                            <p class="grant-number">{{ funder.grantNumber }}</p>
+                            {% endif %}
+                        </div>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

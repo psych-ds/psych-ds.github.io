@@ -1,44 +1,78 @@
 ---
+# Navigation
 whatWeDo: About
-events: Events
-contact: Contact
-tellMeMore: Tell Me More
+getStarted: Get Started
+getInvolved: Get Involved
+forDevelopers: For Developers
+acknowledgements: Acknowledgements
 
-activitiesSubheading: ''
-activities:
-  - title: FAIR project organisation
-    description: 'Work with your data in formats that make your life easy and help you document and share with others.</p>'
+# Hero section
+heroTitle: Psych-DS
+heroSubtitle: A specification for organizing datasets in the social & behavioral sciences
+
+# About section
+aboutHeading: About
+aboutText1: >
+  Data sharing is important, but it can be hard to know how to do it well. When every scientist makes their own decisions about how to structure and share data, 
+  it can be challenging and time-consuming to understand each others' datasets - or even our own work, six months from now!
+aboutText2: >
+  Psych-DS is a community data standard and technical specification that provides a systematic approach to organizing scientific datasets. 
+  It is designed so you can make as few changes as possible to how you work with your datasets right now, in order to make it possible for you to share data exactly as you want to in the future. 
+  Psych-DS provides tools for building and validating datasets, and works to create a consensus format that unlocks machine-readable data sharing for the social and behavioral sciences.
+
+# Get Started section
+getStartedHeading: Get Started
+getStartedItems:
+  - title: Guide
+    description: Learn how to organize your scientific projects to use Psych-DS, and set up your first Psych-DS dataset.
     icon: fa-cogs
-  - title: Human friendly, machine readable
-    description: 'Designed for individual scientists to generate machine-readable datasets and metadata.'
-    icon: fa-laptop
-  - title: Community driven
-    description: "Building consensus for how we structure/document our data so we can find and extend each others' work."
-    icon: fa-group
+    link: "https://psychds-docs.readthedocs.io/en/latest/guides/1_getting_started/" # Add actual link
+  - title: Gallery
+    description: See examples of Psych-DS datasets in a variety of different domains.
+    icon: fa-folder
+    link: "https://github.com/psych-ds/example-datasets" # Update with correct link
+  - title: Validator
+    description: Use the Psych-DS validator to test whether your dataset meets the Psych-DS specification.
+    icon: fa-check-circle
+    link: "https://psych-ds.github.io/validator/" # Add actual validator link
 
-events: Events
-eventsSubheading: Our upcoming and recent events
-eventPlaceholder: Nothing yet! Propose an event here.
-suggestEvent: Suggest an Event
-leadership: How to lead a Study Group session
-pastEvents: See Our Past Events
+# Get Involved section
+getInvolvedHeading: Get Involved
+getInvolvedText1: >
+  This is an ongoing project, and we are actively looking for contributors! We are interested in working with you if you care about making it easier for scientists to work with their data, 
+  whether or not you have specific coding skills. The current maintainers of Psych-DS are 
+  <a style="color:#fed136" href="https://github.com/mekline">Melissa Kline Struhl</a> (Project Lead) and 
+  <a style="color:#fed136" href="https://github.com/bleonar5">Brian Leonard</a> (Software Engineer).
+getInvolvedText2: >
+  Join the mailing list to get involved with building tools and helping people adopt Psych-DS, OR if you would like to hear from us when we officially launch the specification.
 
-notification: Want to be notified of our upcoming events?
-watching: 'Head over to <a href="https://github.com/mozillascience/studyGroup">GitHub</a> and watch our repository, like this:'
-watchingCaption: 'Look in the top right-hand corner of <a href="%GITHUB_REPO_URL%">our repo</a>, and click "Watching." <br>You can undo this at any time in the same place.'
+# For Developers section
+forDevelopersHeading: For Developers
+forDevelopersItems:
+  - title: Docs
+    description: Our complete documentation for Psych-DS, including the full specification generated from LinkML schema.
+    icon: fa-book
+    link: "https://psychds-docs.readthedocs.io/en/latest/reference/rules_and_conventions/"
+  - title: Github
+    description: Our github organization page, where you can find repositories with the source code for our tools, sites, and schema model.
+    icon: fa-github
+    link: "https://github.com/psych-ds"
 
-calendar: Subscribe to our events calendar!
-calendarSubheading: 'We also invite you to follow <a href="%CALENDAR_EMBED_URL%" target="_blank">our calendar</a>, where events will be posted.'
-googleCalendar: 'If you use Google calendar, you can add our calendar by pressing the "Google Calendar" button at the bottom-right of <a href="%CALENDAR_EMBED_URL%" target="_blank">this page</a>.'
-iCal: 'If you use another calendar app, you can copy and paste <a href="%CALENDAR_ICAL_URL%">this address</a> into any calendar product that supports the iCal format.'
 
-sayHi: You can help
-contactSubheading: "Right now, discussions about this project take place via comments and edits to the <a href='https://docs.google.com/document/d/1u8o5jnWk0Iqp_J06PTu5NjBfVsdoPbBhstht6W0fFp0/edit?usp=sharing' style='color:white'>technical specification draft</a>, on the <a href='https://groups.google.com/forum/#!forum/psych-data-standards' style='color:white'>mailing list</a>, and in issues in our <a href='https://github.com/psych-DS/psych-DS' style='color:white'>GitHub repository</a>.<br><br>
-Click below to join the mailing list OR to hear about Psych-DS when we officially launch the specification."
-contact: Stay in touch
+forDevelopersText1: >
+  Our complete documentation for Psych-DS, including the full specification generated from LinkML schema, can be found <a style="color:#fed136" href="https://psychds-docs.readthedocs.io/en/latest/reference/rules_and_conventions/">here</a>.
+forDevelopersText2: >  
+  For an overview of our complete codebase, get started on our <a style="color:#fed136" href="https://github.com/psych-ds">Github page</a>.
 
-teamHeadline: Who We Are
-teamSubheading: "We're scientists, students and researchers who want to work with you!"
-interests: Interests
-
-codeOfConduct: Study Group Code of Conduct
+# Acknowledgements section
+acknowledgementsHeading: Acknowledgements
+acknowledgementsIntro: "Psych-DS has been supported by the following generous funders"
+acknowledgementsItems:
+  - name: Mozilla Science Lab
+    image: img/ScienceLabSticker.ai.png
+    link: https://mozillascience.org/
+    grantNumber: null
+  - name: US National Institutes of Health
+    image: img/nih.jpeg
+    link: https://www.nih.gov/
+    grantNumber: 1RF1MH132747-01

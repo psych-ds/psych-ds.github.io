@@ -1,0 +1,25 @@
+<section id="get-started" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{{site.data.en.getStartedHeading}}</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            {% for item in site.data.en.getStartedItems %}
+            <div class="col-md-4">
+                <a href="{{item.link}}" class="get-started-link" target="_blank">
+                    <div class="get-started-item">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa {{item.icon}} fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">{{item.title}}</h4>
+                        <p class="text-muted">{{item.description}}</p>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -16,3 +16,333 @@
     white-space: initial;
   }
 }
+
+
+header {
+  height: 50vh !important; /* Reduces header height to half viewport */
+  min-height: 300px !important;
+}
+
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+header .intro-text .intro-lead-in {
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+
+header .intro-text .intro-heading {
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+
+
+
+/* Style for the Get Started cards */
+.get-started-item {
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+
+.get-started-item:hover {
+  transform: translateY(-5px);
+}
+
+.get-started-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.get-started-link:hover {
+  text-decoration: none;
+}
+
+section#contact {
+  background-color: #222;
+  background-image: url(img/map-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section#contact .section-heading {
+  color: #fff;
+}
+
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+  height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+  height: 236px;
+}
+
+section#contact .form-control:focus {
+  border-color: #{{ site.color.primary }};
+  box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+section#contact .text-danger {
+  color: #e74c3c;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* Add this for horizontal centering */
+  min-height: 60vh;
+}
+
+.title .container {
+  width: 100%;
+  text-align: center;  /* Ensure container contents are centered */
+}
+
+/* Basic mobile responsiveness */
+@media (max-width: 768px) {
+  /* Header adjustments */
+  header {
+    height: auto !important;
+    padding-top: 70px;  /* Space for navbar */
+  }
+
+  /* Adjust text sizes */
+  header .intro-text .intro-heading {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  header .intro-text .intro-lead-in {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  /* Make containers full width with padding */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Ensure all images stay within screen */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  /* Make all text more readable on small screens */
+  p, .text-muted {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .page-scroll {
+    color:black !important;
+  }
+
+  /* Fix navigation menu */
+  .navbar-collapse {
+    background-color: white;
+    color:black;
+    padding: 15px;
+  }
+
+  /* Ensure buttons don't overflow */
+  .btn {
+    white-space: normal;
+    max-width: 100%;
+  }
+}
+
+/* Add to _includes/css/custom.css */
+#acknowledgements {
+  padding: 4rem 0;
+  background-color: #f7f7f7;
+}
+
+#acknowledgements .lead {
+  margin-bottom: 3rem;
+  color: #495057;
+}
+
+.funders-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.funder-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  width: 280px;
+}
+
+.funder-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.funder-image {
+  width: 200px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.funder-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.funder-info {
+  text-align: center;
+}
+
+.funder-info h4 {
+  color: #2c3e50;
+  margin: 0.5rem 0;
+}
+
+.grant-number {
+  color: #6c757d;
+  font-family: monospace;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .funder-card {
+      width: 100%;
+      max-width: 280px;
+  }
+
+  .section-heading {
+    font-size: clamp(16px, 6vw, 32px) !important;  /* Dynamically scales between 16px and 32px */
+    white-space: nowrap;  /* Prevents word breaking */
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+  } 
+}
+
+/* Fix viewport overflow issues */
+html, body {
+  overflow-x: hidden;  /* Prevent horizontal scroll */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Make containers respect viewport width */
+.container {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  overflow-x: hidden;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+/* Ensure all content respects container bounds */
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 991px) {  /* Changed from default 768px to 991px */
+  .navbar-header {
+      float: none;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-collapse.collapse {
+      display: none !important;
+  }
+  .navbar-nav {
+      float: none !important;
+      margin: 7.5px -15px;
+  }
+  .navbar-nav > li {
+      float: none;
+  }
+  .navbar-nav > li > a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .navbar-collapse.collapse.in { 
+      display: block !important;
+  }
+  .collapsing {
+      overflow: hidden !important;
+  }
+  
+  /* Style the collapsed menu */
+  .navbar-collapse {
+      background-color: white;
+      padding: 15px;
+  }
+  .page-scroll {
+      color: black !important;
+  }
+}

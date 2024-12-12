@@ -359,10 +359,6 @@ header .intro-text .intro-heading {
     }
 }
 
-section {
-    padding: 100px 0;
-}
-
 section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
@@ -380,8 +376,14 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 50px 0;
+        scroll-margin-top:200px
     }
+}
+
+section {
+    padding: 50px 0;
+    scroll-margin-top:200px
 }
 
 .service-heading {
@@ -691,68 +693,68 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact {
+section#get-involved {
     background-color: #222;
     background-image: url(img/map-image.png);
     background-position: center;
     background-repeat: no-repeat;
 }
 
-section#contact .section-heading {
+section#get-involved .section-heading {
     color: #fff;
 }
 
-section#contact .form-group {
+section#get-involved .form-group {
     margin-bottom: 25px;
 }
 
-section#contact .form-group input,
-section#contact .form-group textarea {
+section#get-involved .form-group input,
+section#get-involved .form-group textarea {
     padding: 20px;
 }
 
-section#contact .form-group input.form-control {
+section#get-involved .form-group input.form-control {
     height: auto;
 }
 
-section#contact .form-group textarea.form-control {
+section#get-involved .form-group textarea.form-control {
     height: 236px;
 }
 
-section#contact .form-control:focus {
+section#get-involved .form-control:focus {
     border-color: #{{ site.color.primary }};
     box-shadow: none;
 }
 
-section#contact::-webkit-input-placeholder {
+section#get-involved::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact:-moz-placeholder {
+section#get-involved:-moz-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact::-moz-placeholder {
+section#get-involved::-moz-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact:-ms-input-placeholder {
+section#get-involved:-ms-input-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact .text-danger {
+section#get-involved .text-danger {
     color: #e74c3c;
 }
 
